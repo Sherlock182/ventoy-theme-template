@@ -140,7 +140,7 @@ etiquetada `Ventoy`.
 Con Git:
 
 ```bash
-git clone https://github.com/USUARIO/kit-de-herramientas-ventoy.git
+git clone https://github.com/Sherlock182/kit-de-herramientas-ventoy.git
 cd kit-de-herramientas-ventoy
 ```
 

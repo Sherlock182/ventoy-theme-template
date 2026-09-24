@@ -19,7 +19,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_theme import LAYOUT, ROOT, font, hex_to_rgb, rgba, text_width  # noqa: E402
+from build_theme import LAYOUT, ROOT, font, rgba  # noqa: E402
 
 DOCS = ROOT / "docs" / "img"
 

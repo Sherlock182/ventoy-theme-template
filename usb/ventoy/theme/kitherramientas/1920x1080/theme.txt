@@ -68,28 +68,28 @@ menu-tip-color: "#8FB7E8"
   left = 3%
   top = 986
   width = 10%
-  height = 24
+  height = 25
   + label { text = "@VTOY_MEM_DISK@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
 }
 + hbox {
   left = 3%+220
   top = 986
   width = 10%
-  height = 24
+  height = 25
   + label { text = "@VTOY_ISO_RAW@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
 }
 + hbox {
   left = 3%+440
   top = 986
   width = 10%
-  height = 24
+  height = 25
   + label { text = "@VTOY_GRUB2_MODE@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
 }
 + hbox {
   left = 3%+660
   top = 986
   width = 10%
-  height = 24
+  height = 25
   + label { text = "@VTOY_WIMBOOT_MODE@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
 }
 + hbox {

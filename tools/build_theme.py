@@ -21,7 +21,6 @@ import argparse
 import colorsys
 import json
 import math
-import re
 import shutil
 import sys
 from pathlib import Path
@@ -59,12 +58,6 @@ def mix(a: str | tuple, b: str | tuple, t: float) -> tuple[int, int, int]:
     """Interpola dos colores. t=0 devuelve a, t=1 devuelve b."""
     ca, cb = hex_to_rgb(a), hex_to_rgb(b)
     return tuple(round(ca[i] + (cb[i] - ca[i]) * t) for i in range(3))  # type: ignore[return-value]
-
-
-def shade(value: str | tuple, factor: float) -> tuple[int, int, int]:
-    """factor < 1 oscurece, factor > 1 aclara."""
-    c = hex_to_rgb(value)
-    return tuple(max(0, min(255, round(x * factor))) for x in c)  # type: ignore[return-value]
 
 
 def hue_of(value: str) -> tuple[float, float]:
@@ -112,12 +105,9 @@ def text_width(draw: ImageDraw.ImageDraw, text: str, f: ImageFont.FreeTypeFont) 
     return box[2] - box[0]
 
 
-def tracked_text(draw: ImageDraw.ImageDraw, xy, text, f, fill, tracking=0, anchor_left=True):
+def tracked_text(draw: ImageDraw.ImageDraw, xy, text, f, fill, tracking=0):
     """Dibuja texto con espaciado entre letras (tracking) y devuelve el ancho usado."""
     x, y = xy
-    if not anchor_left:  # medir primero para centrar
-        total = sum(text_width(draw, ch, f) + tracking for ch in text) - tracking
-        x -= total / 2
     start = x
     for ch in text:
         draw.text((x, y), ch, font=f, fill=fill)
@@ -554,9 +544,9 @@ def build_theme_txt(res: str, L: dict, C: dict, cfg: dict) -> str:
         "  left = 3%{off}\n"
         "  top = {top}\n"
         "  width = 10%\n"
-        "  height = {hh}\n"
+        "  height = 25\n"
         '  + label {{ text = "{flag}" color = "{color}" align = "left" font = "{font}" }}\n'
-        "}}".format(off=f"+{i * 220}" if i else "", top=L["flags_top"], hh=L["item_h"] // 2,
+        "}}".format(off=f"+{i * 220}" if i else "", top=L["flags_top"],
                     flag=flag, color=C["flag"], font=small)
         for i, flag in enumerate(FLAGS)
     )

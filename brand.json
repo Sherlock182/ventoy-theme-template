@@ -1,5 +1,5 @@
 {
-  "_comment": "Edite este archivo y ejecute  python tools/build_theme.py  para regenerar todo el tema con su propia marca.",
+  "_comment": "MARCA DE EJEMPLO. Reemplace estos valores por los suyos y ejecute python tools/build_theme.py para regenerar todo el tema.",
   "project_name": "Kit de Herramientas",
   "theme_dir": "kitherramientas",
   "logo": {

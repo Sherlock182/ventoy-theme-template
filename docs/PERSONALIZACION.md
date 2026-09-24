@@ -1,7 +1,8 @@
 # Personalización
 
 Todo el aspecto del menú sale de un único archivo, **`brand.json`**, y de un
-único comando:
+único comando. Lo que trae la plantilla —"Kit de Herramientas"— es solo una
+marca de ejemplo: está ahí para que veas cómo queda, y para que la reemplaces.
 
 ```bash
 pip install -r tools/requirements.txt

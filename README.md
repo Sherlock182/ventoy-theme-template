@@ -1,12 +1,18 @@
 <div align="center">
 
-<img src="brand/logo_horizontal_fondo_oscuro.png" alt="Kit de Herramientas" width="620">
+# Ventoy Theme Template
 
-**Tema profesional en español para memorias USB multiarranque con [Ventoy](https://www.ventoy.net).**
+**Plantilla de tema en español para memorias USB multiarranque con
+[Ventoy](https://www.ventoy.net).**
 
-Menú organizado por categorías, en español, con iconos, descripciones y soporte
-para 1920×1080, 1366×768 y 1024×768. Todo se regenera con tu propia marca
-ejecutando un solo comando.
+Menú organizado por categorías, con iconos y descripciones, para 1920×1080,
+1366×768 y 1024×768.
+
+<img src="brand/logo_horizontal_fondo_oscuro.png" alt="Logo de ejemplo que genera la plantilla" width="560">
+
+<sub>↑ Este logo es solo la **marca de ejemplo** que trae la plantilla.
+Cambias un archivo de configuración, ejecutas un comando, y el logo, el fondo,
+los iconos y el menú se rehacen con la tuya.</sub>
 
 </div>
 
@@ -50,10 +56,10 @@ a la memoria y al arrancar el equipo aparecen en una lista. El menú que trae de
 fábrica es funcional, pero muestra los nombres de archivo tal cual y sin ningún
 orden.
 
-Este repositorio es **un tema y una configuración lista para usar** que
-convierte ese menú en algo presentable:
+Este repositorio es **una plantilla** que convierte ese menú en algo
+presentable. Puedes usarla tal cual, o ponerle tu propia marca:
 
-| Ventoy de fábrica | Con este kit |
+| Ventoy de fábrica | Con esta plantilla |
 |---|---|
 | Lista plana de nombres de archivo | Cinco categorías: Windows, Reparación, Clonación, Diagnóstico, Linux |
 | `HBCD_PE_x64.iso` | `Hiren's BootCD PE · Kit de rescate WinPE` |
@@ -61,9 +67,10 @@ convierte ese menú en algo presentable:
 | Menú en inglés | Menú e interfaz en español |
 | Tema por defecto | Fondo, logo, iconos y tipografía propios |
 
-Y no es un tema cerrado: `brand.json` + `python tools/build_theme.py`
-regeneran **todas** las imágenes con el nombre, el color y la inicial que tú
-elijas. No hace falta abrir Photoshop.
+Y no es un tema cerrado, por eso es una *plantilla*: la marca que trae
+—"Kit de Herramientas"— es solo un ejemplo. Editas `brand.json`, ejecutas
+`python tools/build_theme.py`, y **todas** las imágenes se regeneran con el
+nombre, el color y la inicial que tú elijas. No hace falta abrir Photoshop.
 
 ---
 
@@ -140,8 +147,8 @@ etiquetada `Ventoy`.
 Con Git:
 
 ```bash
-git clone https://github.com/Sherlock182/kit-de-herramientas-ventoy.git
-cd kit-de-herramientas-ventoy
+git clone https://github.com/Sherlock182/ventoy-theme-template.git
+cd ventoy-theme-template
 ```
 
 O sin Git: botón verde **Code → Download ZIP**, y descomprime.
@@ -295,9 +302,9 @@ Si arranca con el tema por defecto de Ventoy en vez de este, salta a
 
 ## Poner tu propia marca
 
-Aquí es donde este repositorio se diferencia de un tema normal: **no tienes que
+Aquí es donde esta plantilla se diferencia de un tema normal: **no tienes que
 editar imágenes**. Todo el arte se genera desde un único archivo de
-configuración.
+configuración, y la marca que viene de fábrica solo está ahí como ejemplo.
 
 ```bash
 pip install -r tools/requirements.txt

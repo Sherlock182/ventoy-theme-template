@@ -1,0 +1,40 @@
+# ==========================================================
+#  {PROJECT_UPPER} - Menu extendido (tecla F6)
+#
+#  Generado por tools/build_theme.py desde
+#  tools/assets/ventoy_grub.cfg.tmpl  -- edite la plantilla, no este archivo.
+# ==========================================================
+
+menuentry "Informacion del {PROJECT_NAME}" --class=info {{
+    echo ""
+    echo "  {PROJECT_UPPER}"
+    echo "  -------------------------------------------------------------"
+    echo "  Categorias del menu principal:"
+{CATEGORIES}
+    echo ""
+    echo "  Teclas utiles:  F1 Ayuda  |  F2 Navegar  |  F3 Cambiar vista"
+    echo "                  F4 Arrancar el disco local  |  F5 Herramientas"
+    echo ""
+    echo "  Presione ENTER para regresar..."
+    read vtInputKey
+}}
+
+menuentry "Reiniciar el equipo" --class=reboot {{
+    echo "Reiniciando el equipo..."
+    reboot
+}}
+
+menuentry "Apagar el equipo" --class=poweroff {{
+    echo "Apagando el equipo..."
+    halt
+}}
+
+if [ "$grub_platform" = "efi" ]; then
+    menuentry "Entrar a la configuracion UEFI (BIOS)" --class=settings {{
+        fwsetup
+    }}
+fi
+
+menuentry "Regresar al menu principal  [Esc]" --class=vtoyret VTOY_RET {{
+    echo "Regresando..."
+}}

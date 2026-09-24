@@ -1,0 +1,18 @@
+# Material original apartado al generalizar el proyecto: no forma parte del repo
+_original_montalvo/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Imagenes de disco: nunca deben subirse
+*.iso
+*.img
+*.wim
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

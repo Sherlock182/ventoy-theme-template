@@ -1,0 +1,110 @@
+ventoy_left_top_color: "@100%-240@1037@#5C7299@"
+# ==========================================================
+#  KIT DE HERRAMIENTAS - Tema para Ventoy (1920x1080)
+#  Generado por tools/build_theme.py - no editar a mano.
+# ==========================================================
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#060B16"
+message-color: "#DDE7F7"
+message-bg-color: "#060B16"
+
+terminal-font: "Unknown Regular 16"
+terminal-box: "terminal_box_*.png"
+terminal-left: "8%"
+terminal-top: "24%"
+terminal-width: "84%"
+terminal-height: "64%"
+terminal-border: "0"
+
+menu-tip-left: "50%-500"
+menu-tip-top: "838"
+menu-tip-color: "#8FB7E8"
+
+# ---------- Logo ----------
++ image {
+  left = 50%-240
+  top = 58
+  file = "logo.png"
+}
+
+# ---------- Instruccion ----------
++ label {
+  left = 0
+  top = 236
+  width = 100%
+  height = 24
+  align = "center"
+  font = "Poppins Regular 17"
+  color = "#7F93B5"
+  text = "Seleccione una herramienta con las flechas y presione ENTER"
+}
+
+# ---------- Menu principal ----------
++ boot_menu {
+  left = 50%-500
+  top = 282
+  width = 1000
+  height = 540
+  menu_pixmap_style = "menu_*.png"
+  item_font = "Poppins Medium 22"
+  item_color = "#B8C7DE"
+  selected_item_font = "Poppins Medium 22"
+  selected_item_color = "#FFFFFF"
+  item_height = 48
+  item_padding = 16
+  item_spacing = 8
+  icon_width = 32
+  icon_height = 32
+  item_icon_space = 16
+  selected_item_pixmap_style = "select_*.png"
+  scrollbar = true
+  scrollbar_width = 6
+  scrollbar_thumb = "slider_*.png"
+}
+
+# ---------- Indicadores de modo (Ctrl+D, Ctrl+R, Ctrl+W, ...) ----------
++ hbox {
+  left = 3%
+  top = 986
+  width = 10%
+  height = 24
+  + label { text = "@VTOY_MEM_DISK@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
+}
++ hbox {
+  left = 3%+220
+  top = 986
+  width = 10%
+  height = 24
+  + label { text = "@VTOY_ISO_RAW@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
+}
++ hbox {
+  left = 3%+440
+  top = 986
+  width = 10%
+  height = 24
+  + label { text = "@VTOY_GRUB2_MODE@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
+}
++ hbox {
+  left = 3%+660
+  top = 986
+  width = 10%
+  height = 24
+  + label { text = "@VTOY_WIMBOOT_MODE@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
+}
++ hbox {
+  left = 100%-260
+  top = 22
+  width = 10%
+  height = 25
+  + label { text = "@VTOY_ISO_UEFI_DRV@" color = "#FFB547" align = "left" font = "Poppins Regular 17" }
+}
+
+# ---------- Barra inferior: teclas rapidas ----------
++ hbox {
+  left = 3%
+  top = 1037
+  width = 10%
+  height = 25
+  + label { text = "@VTOY_HOTKEY_TIP@" color = "#9FB0CC" align = "left" font = "Poppins Regular 17" }
+}

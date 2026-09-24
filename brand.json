@@ -1,0 +1,35 @@
+{
+  "_comment": "Edite este archivo y ejecute  python tools/build_theme.py  para regenerar todo el tema con su propia marca.",
+  "project_name": "Kit de Herramientas",
+  "theme_dir": "kitherramientas",
+  "logo": {
+    "line_top": "KIT DE",
+    "line_main": "HERRAMIENTAS",
+    "tagline": "SISTEMAS · DIAGNÓSTICO · RECUPERACIÓN",
+    "initial": "H"
+  },
+  "prompt": "Seleccione una herramienta con las flechas y presione ENTER",
+  "colors": {
+    "accent": "#3BA9F7",
+    "accent_deep": "#1D4ED8",
+    "bg_deep": "#060B16",
+    "bg_soft": "#0E1B33",
+    "item": "#B8C7DE",
+    "item_selected": "#FFFFFF",
+    "muted": "#7F93B5",
+    "tip": "#8FB7E8",
+    "hint": "#9FB0CC",
+    "flag": "#FFB547",
+    "ventoy_version": "#5C7299"
+  },
+  "resolutions": [
+    "1920x1080",
+    "1366x768",
+    "1024x768"
+  ],
+  "background": {
+    "hex_pattern": true,
+    "watermark": true,
+    "top_rule": true
+  }
+}

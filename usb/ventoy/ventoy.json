@@ -1,0 +1,214 @@
+{
+    "control": [
+        {
+            "VTOY_MENU_LANGUAGE": "es_ES"
+        },
+        {
+            "VTOY_DEFAULT_MENU_MODE": "1"
+        },
+        {
+            "VTOY_TREE_VIEW_MENU_STYLE": "1"
+        },
+        {
+            "VTOY_FILT_DOT_UNDERSCORE_FILE": "1"
+        },
+        {
+            "VTOY_WIN11_BYPASS_CHECK": "1"
+        },
+        {
+            "VTOY_WIN11_BYPASS_NRO": "1"
+        }
+    ],
+    "theme": {
+        "file": [
+            "/ventoy/theme/kitherramientas/1920x1080/theme.txt",
+            "/ventoy/theme/kitherramientas/1366x768/theme.txt",
+            "/ventoy/theme/kitherramientas/1024x768/theme.txt"
+        ],
+        "gfxmode": "1920x1080,1366x768,1024x768",
+        "resolution_fit": 1,
+        "default_file": 0,
+        "display_mode": "GUI",
+        "ventoy_left": "100%-240",
+        "ventoy_top": "100%-42",
+        "ventoy_color": "#5C7299",
+        "fonts": [
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Bold-14.pf2",
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Bold-18.pf2",
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Medium-16.pf2",
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Medium-22.pf2",
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Regular-14.pf2",
+            "/ventoy/theme/kitherramientas/fonts/Poppins-Regular-17.pf2"
+        ]
+    },
+    "menu_alias": [
+        {
+            "dir": "/01_WINDOWS",
+            "alias": "Instalación de Windows"
+        },
+        {
+            "dir": "/02_REPARACION",
+            "alias": "Reparación del sistema"
+        },
+        {
+            "dir": "/03_CLONACION",
+            "alias": "Clonación y respaldo de discos"
+        },
+        {
+            "dir": "/04_DIAGNOSTICO",
+            "alias": "Diagnóstico de hardware"
+        },
+        {
+            "dir": "/05_LINUX",
+            "alias": "Linux Live y utilidades"
+        },
+        {
+            "image": "/01_WINDOWS/Windows11.iso",
+            "alias": "Windows 11  ·  64 bits  ·  Español"
+        },
+        {
+            "image": "/01_WINDOWS/Windows10.iso",
+            "alias": "Windows 10  ·  Instalación o reinstalación"
+        },
+        {
+            "image": "/02_REPARACION/HBCD_PE_x64.iso",
+            "alias": "Hiren's BootCD PE  ·  Kit de rescate WinPE"
+        },
+        {
+            "image": "/03_CLONACION/rescuezilla.iso",
+            "alias": "Rescuezilla  ·  Clonar y respaldar discos"
+        },
+        {
+            "image": "/04_DIAGNOSTICO/memtest86plus.iso",
+            "alias": "MemTest86+  ·  Prueba de memoria RAM"
+        },
+        {
+            "image": "/05_LINUX/ubuntu-desktop-amd64.iso",
+            "alias": "Ubuntu  ·  Sesión Live o instalación"
+        }
+    ],
+    "menu_class": [
+        {
+            "key": "Windows",
+            "class": "install"
+        },
+        {
+            "key": "HBCD",
+            "class": "repair"
+        },
+        {
+            "key": "escuezilla",
+            "class": "clone"
+        },
+        {
+            "key": "emtest",
+            "class": "diag"
+        },
+        {
+            "key": "buntu",
+            "class": "linux"
+        },
+        {
+            "parent": "/01_WINDOWS",
+            "class": "install"
+        },
+        {
+            "parent": "/02_REPARACION",
+            "class": "repair"
+        },
+        {
+            "parent": "/03_CLONACION",
+            "class": "clone"
+        },
+        {
+            "parent": "/04_DIAGNOSTICO",
+            "class": "diag"
+        },
+        {
+            "parent": "/05_LINUX",
+            "class": "linux"
+        },
+        {
+            "dir": "/01_WINDOWS",
+            "class": "install"
+        },
+        {
+            "dir": "/02_REPARACION",
+            "class": "repair"
+        },
+        {
+            "dir": "/03_CLONACION",
+            "class": "clone"
+        },
+        {
+            "dir": "/04_DIAGNOSTICO",
+            "class": "diag"
+        },
+        {
+            "dir": "/05_LINUX",
+            "class": "linux"
+        }
+    ],
+    "menu_tip": {
+        "left": "50%-500",
+        "top": "85%",
+        "color": "#8FB7E8",
+        "tips": [
+            {
+                "dir": "/01_WINDOWS",
+                "tip1": "Instaladores de Windows 10 y Windows 11.",
+                "tip2": "Instalación limpia o reinstalación del sistema operativo."
+            },
+            {
+                "dir": "/02_REPARACION",
+                "tip1": "Entornos de rescate (WinPE) para reparar Windows.",
+                "tip2": "Recuperar el arranque, archivos y contraseñas; eliminar malware."
+            },
+            {
+                "dir": "/03_CLONACION",
+                "tip1": "Clonación y copias de seguridad de discos y particiones.",
+                "tip2": "Migrar de HDD a SSD o guardar una imagen completa del sistema."
+            },
+            {
+                "dir": "/04_DIAGNOSTICO",
+                "tip1": "Pruebas de hardware y entornos de recuperación.",
+                "tip2": "Memoria RAM, discos y arranque del equipo."
+            },
+            {
+                "dir": "/05_LINUX",
+                "tip1": "Distribuciones Linux en modo Live.",
+                "tip2": "Probar el equipo y rescatar datos sin instalar nada."
+            },
+            {
+                "image": "/01_WINDOWS/Windows11.iso",
+                "tip1": "Instalador de Windows 11 (64 bits).",
+                "tip2": "Sin exigir TPM 2.0 / Secure Boot ni cuenta Microsoft durante la instalación."
+            },
+            {
+                "image": "/01_WINDOWS/Windows10.iso",
+                "tip1": "Instalador de Windows 10.",
+                "tip2": "Opción recomendada para equipos antiguos o con poca memoria RAM."
+            },
+            {
+                "image": "/02_REPARACION/HBCD_PE_x64.iso",
+                "tip1": "Hiren's BootCD PE: entorno WinPE con herramientas de reparación.",
+                "tip2": "Diagnóstico, recuperación de datos, contraseñas y antivirus."
+            },
+            {
+                "image": "/03_CLONACION/rescuezilla.iso",
+                "tip1": "Rescuezilla: clonar discos y particiones con interfaz gráfica.",
+                "tip2": "Crear o restaurar imágenes de respaldo; compatible con Clonezilla."
+            },
+            {
+                "image": "/04_DIAGNOSTICO/memtest86plus.iso",
+                "tip1": "MemTest86+: prueba a fondo la memoria RAM del equipo.",
+                "tip2": "Deje correr al menos una pasada completa; si hay errores, la RAM está fallando."
+            },
+            {
+                "image": "/05_LINUX/ubuntu-desktop-amd64.iso",
+                "tip1": "Ubuntu en modo Live: probar o instalar Linux.",
+                "tip2": "También sirve para rescatar archivos de un Windows que no arranca."
+            }
+        ]
+    }
+}
